@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+head{
+  position: fixed;
+}
 body {
   font-family: 'Varela Round';
 }
@@ -23,6 +29,17 @@ a.activePage {
   z-index: 3;
 }
 
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
 .sticky+.content {
   padding-top: 60px;
 }
@@ -58,7 +75,7 @@ a.activePage {
 
 .header-overlay {
   height: 100vh;
-  width: 100vw;
+  width: 98.8vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -145,9 +162,12 @@ main#home h1 {
   color: white;
   font-size: 0.8rem;
   font-family: 'Varela Round';
+  background-color: #161616;
   margin-bottom: 5;
   margin-top: 5;
   letter-spacing: 0.15rem;
+  margin-left: -5%;
+  margin-right: -4.7% ;
 }
 
 .job-3 {
